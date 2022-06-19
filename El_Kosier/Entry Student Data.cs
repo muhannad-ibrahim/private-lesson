@@ -1,4 +1,5 @@
-﻿using System;
+﻿using El_Kosier.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -44,7 +45,7 @@ namespace El_Kosier
              if (e.KeyCode == Keys.Enter)
             {
                 studentNameTextBox3.Focus();
-        }
+            }
         }
 
         private void studentNameTextBox3_KeyUp(object sender, KeyEventArgs e)
@@ -90,6 +91,21 @@ namespace El_Kosier
         private void returnButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            string studentName = studentNameTextBox3.Text.ToString();
+            string studentCode = studentIdTextBox2.Text;
+            string grade = gradeComboBox11.SelectedText.ToString();
+            string parentNumber = guardianNumberTextBox4.Text.ToString();
+            string notes = notesTextBox5.Text.ToString();
+            int placeId = Place.getPlaceIdByName(placeComboBox9.SelectedItem.ToString());
+            int groupId = Group.getGroupIdByName(groupComboBox10.SelectedItem.ToString());
+            string studentNumber = studentNumberTextBox1.Text;
+            string enrollDate = dateTimePicker1.Text.ToString();
+
+            Student.insertStudent(studentName, studentCode, grade, parentNumber, notes, studentNumber, enrollDate, placeId, groupId);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using El_Kosier.Models;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,12 @@ namespace El_Kosier
 
         private void returnButton_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
+
+        private void runButton_Click(object sender, EventArgs e)
+        {
+            Place.insertPlace(textBox1.Text.ToString());
             this.Close();
         }
     }

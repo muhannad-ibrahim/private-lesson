@@ -25,13 +25,11 @@ namespace El_Kosier.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("El-Kosier")]
-        public string mahmoud {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\El_Kosier\\Database1.mdf" +
+            ";Integrated Security=True")]
+        public string cn {
             get {
-                return ((string)(this["mahmoud"]));
-            }
-            set {
-                this["mahmoud"] = value;
+                return ((string)(this["cn"]));
             }
         }
     }

@@ -1,4 +1,5 @@
 ﻿using System;
+using El_Kosier.Models;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -40,6 +41,13 @@ namespace El_Kosier
             {
                 addButton.Focus();
             }
+        }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+            int placeId = Place.getPlaceIdByName(placeComboBox9.SelectedItem.ToString());
+            Group.insertGroup(nameTextBox1.Text, placeId);
+            this.Close();
         }
     }
 }

@@ -190,3 +190,7 @@ F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.csproj.Cor
 F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\ar\El_Kosier.resources.dll
 F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.exe
 F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.pdb
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\bin\Debug\Database1.mdf
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\bin\Debug\Database1_log.ldf
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\bin\Debug\El-kosier.mdf
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\bin\Debug\El-kosier_log.ldf

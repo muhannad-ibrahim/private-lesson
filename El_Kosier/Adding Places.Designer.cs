@@ -69,6 +69,7 @@
             this.runButton.TabIndex = 80;
             this.runButton.Text = "Add";
             this.runButton.UseVisualStyleBackColor = false;
+            this.runButton.Click += new System.EventHandler(this.runButton_Click);
             // 
             // label2
             // 
