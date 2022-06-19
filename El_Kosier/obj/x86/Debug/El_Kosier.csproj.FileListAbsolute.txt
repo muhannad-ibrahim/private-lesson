@@ -1,0 +1,192 @@
+F:\Yahia\Mahmoud\Mahmoud\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\El_Kosier.exe.config
+F:\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\bin\Debug\El_Kosier.exe.config
+F:\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\bin\Debug\El_Kosier.exe
+F:\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\bin\Debug\El_Kosier.pdb
+F:\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\bin\Debug\ar\El_Kosier.resources.dll
+F:\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.MainWindow.resources
+F:\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Entry.resources
+F:\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Form3.resources
+F:\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Attendance.resources
+F:\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Payment.resources
+F:\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Exam.resources
+F:\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Properties.Resources.resources
+F:\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.MainWindow.ar.resources
+F:\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.csproj.GenerateResource.Cache
+F:\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\ar\El_Kosier.resources.dll
+F:\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.exe
+F:\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.pdb
+F:\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Search.resources
+F:\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Preview.resources
+\\Pc14\f\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\bin\Debug\El_Kosier.exe.config
+\\Pc14\f\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.exe
+\\Pc14\f\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.pdb
+\\Pc14\f\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\bin\Debug\El_Kosier.exe
+\\Pc14\f\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\bin\Debug\El_Kosier.pdb
+\\Pc14\f\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\bin\Debug\ar\El_Kosier.resources.dll
+\\Pc14\f\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Preview.resources
+\\Pc14\f\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Search.resources
+\\Pc14\f\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.MainWindow.resources
+\\Pc14\f\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Entry.resources
+\\Pc14\f\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Form3.resources
+\\Pc14\f\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Attendance.resources
+\\Pc14\f\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Payment.resources
+\\Pc14\f\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Exam.resources
+\\Pc14\f\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Properties.Resources.resources
+\\Pc14\f\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.MainWindow.ar.resources
+\\Pc14\f\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.csproj.GenerateResource.Cache
+\\Pc14\f\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\ar\El_Kosier.resources.dll
+F:\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.csprojResolveAssemblyReference.cache
+E:\Yahia\Mahmoud\El-Kosier\El_Kosier\bin\Debug\El_Kosier.exe.config
+E:\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.exe
+E:\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.pdb
+E:\Yahia\Mahmoud\El-Kosier\El_Kosier\bin\Debug\El_Kosier.exe
+E:\Yahia\Mahmoud\El-Kosier\El_Kosier\bin\Debug\El_Kosier.pdb
+E:\Yahia\Mahmoud\El-Kosier\El_Kosier\bin\Debug\ar\El_Kosier.resources.dll
+E:\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.csprojResolveAssemblyReference.cache
+E:\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Preview.resources
+E:\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Search.resources
+E:\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.MainWindow.resources
+E:\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Entry.resources
+E:\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Form3.resources
+E:\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Attendance.resources
+E:\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Payment.resources
+E:\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Exam.resources
+E:\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Properties.Resources.resources
+E:\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.MainWindow.ar.resources
+E:\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.csproj.GenerateResource.Cache
+E:\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\ar\El_Kosier.resources.dll
+\\Pc6\e\Yahia\Mahmoud\El-Kosier\El_Kosier\bin\Debug\El_Kosier.exe.config
+\\Pc6\e\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.exe
+\\Pc6\e\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.pdb
+E:\Yahia\Mahmoud\New folder\El-Kosier\El-Kosier\El_Kosier\bin\Debug\El_Kosier.exe.config
+E:\Yahia\Mahmoud\New folder\El-Kosier\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.exe
+E:\Yahia\Mahmoud\New folder\El-Kosier\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.pdb
+E:\Yahia\Mahmoud\New folder\El-Kosier\El-Kosier\El_Kosier\bin\Debug\El_Kosier.exe
+E:\Yahia\Mahmoud\New folder\El-Kosier\El-Kosier\El_Kosier\bin\Debug\El_Kosier.pdb
+E:\Yahia\Mahmoud\New folder\El-Kosier\El-Kosier\El_Kosier\bin\Debug\ar\El_Kosier.resources.dll
+E:\Yahia\Mahmoud\New folder\El-Kosier\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.csprojResolveAssemblyReference.cache
+E:\Yahia\Mahmoud\New folder\El-Kosier\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Preview.resources
+E:\Yahia\Mahmoud\New folder\El-Kosier\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Search.resources
+E:\Yahia\Mahmoud\New folder\El-Kosier\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.MainWindow.resources
+E:\Yahia\Mahmoud\New folder\El-Kosier\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Entry.resources
+E:\Yahia\Mahmoud\New folder\El-Kosier\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Form3.resources
+E:\Yahia\Mahmoud\New folder\El-Kosier\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Attendance.resources
+E:\Yahia\Mahmoud\New folder\El-Kosier\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Payment.resources
+E:\Yahia\Mahmoud\New folder\El-Kosier\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Exam.resources
+E:\Yahia\Mahmoud\New folder\El-Kosier\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Properties.Resources.resources
+E:\Yahia\Mahmoud\New folder\El-Kosier\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.MainWindow.ar.resources
+E:\Yahia\Mahmoud\New folder\El-Kosier\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.csproj.GenerateResource.Cache
+E:\Yahia\Mahmoud\New folder\El-Kosier\El-Kosier\El_Kosier\obj\x86\Debug\ar\El_Kosier.resources.dll
+F:\Yahia\Mahmoud\New folder\El-Kosier\El-Kosier\El_Kosier\bin\Debug\El_Kosier.exe.config
+F:\Yahia\Mahmoud\New folder\El-Kosier\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.exe
+F:\Yahia\Mahmoud\New folder\El-Kosier\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.pdb
+F:\Yahia\Mahmoud\El-Kosier\El_Kosier\bin\Debug\El_Kosier.exe.config
+F:\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.exe
+F:\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.pdb
+\\Pc14\f\Yahia\Mahmoud\El-Kosier\El_Kosier\bin\Debug\El_Kosier.exe.config
+\\Pc14\f\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.exe
+\\Pc14\f\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.pdb
+\\Pc14\f\Yahia\Mahmoud\El-Kosier\El_Kosier\bin\Debug\El_Kosier.exe
+\\Pc14\f\Yahia\Mahmoud\El-Kosier\El_Kosier\bin\Debug\El_Kosier.pdb
+\\Pc14\f\Yahia\Mahmoud\El-Kosier\El_Kosier\bin\Debug\ar\El_Kosier.resources.dll
+\\Pc14\f\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.csprojResolveAssemblyReference.cache
+\\Pc14\f\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Preview.resources
+\\Pc14\f\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Search.resources
+\\Pc14\f\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.MainWindow.resources
+\\Pc14\f\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Entry.resources
+\\Pc14\f\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Form3.resources
+\\Pc14\f\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Attendance.resources
+\\Pc14\f\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Payment.resources
+\\Pc14\f\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Exam.resources
+\\Pc14\f\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.Properties.Resources.resources
+\\Pc14\f\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.MainWindow.ar.resources
+\\Pc14\f\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.csproj.GenerateResource.Cache
+\\Pc14\f\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\ar\El_Kosier.resources.dll
+\\Pc14\f\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.adding_places.resources
+\\Pc14\f\Yahia\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.adding_groups.resources
+\\Pc14\f\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.csprojResolveAssemblyReference.cache
+\\Pc14\f\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.adding_places.resources
+\\Pc14\f\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.adding_groups.resources
+F:\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.adding_places.resources
+F:\Yahia\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.adding_groups.resources
+\\Pc18\e\Mahmoud\Mahmoud\El-Kosier\El_Kosier\bin\Debug\El_Kosier.exe.config
+\\Pc18\e\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.exe
+\\Pc18\e\Mahmoud\Mahmoud\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.pdb
+\\Pc18\e\Mahmoud\Mahmoud akher wad3\El-Kosier\El_Kosier\bin\Debug\El_Kosier.exe.config
+\\Pc18\e\Mahmoud\Mahmoud akher wad3\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.exe
+\\Pc18\e\Mahmoud\Mahmoud akher wad3\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.pdb
+E:\Mahmoud\Mahmoud akher wad3\El-Kosier\El_Kosier\bin\Debug\El_Kosier.exe.config
+E:\Mahmoud\Mahmoud akher wad3\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.exe
+E:\Mahmoud\Mahmoud akher wad3\El-Kosier\El_Kosier\obj\x86\Debug\El_Kosier.pdb
+F:\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\bin\Debug\El_Kosier.exe.config
+F:\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.exe
+F:\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.pdb
+F:\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\bin\Debug\El_Kosier.exe
+F:\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\bin\Debug\El_Kosier.pdb
+F:\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\bin\Debug\ar\El_Kosier.resources.dll
+F:\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.csprojResolveAssemblyReference.cache
+F:\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.adding_places.resources
+F:\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.adding_groups.resources
+F:\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.Preview.resources
+F:\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.Search.resources
+F:\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.MainWindow.resources
+F:\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.Entry.resources
+F:\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.Form3.resources
+F:\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.Attendance.resources
+F:\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.Payment.resources
+F:\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.Exam.resources
+F:\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.Properties.Resources.resources
+F:\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.MainWindow.ar.resources
+F:\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.csproj.GenerateResource.Cache
+F:\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\ar\El_Kosier.resources.dll
+\\Pc14\f\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\bin\Debug\El_Kosier.exe.config
+\\Pc14\f\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.exe
+\\Pc14\f\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.pdb
+\\Pc14\f\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\bin\Debug\El_Kosier.exe
+\\Pc14\f\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\bin\Debug\El_Kosier.pdb
+\\Pc14\f\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\bin\Debug\ar\El_Kosier.resources.dll
+\\Pc14\f\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.csprojResolveAssemblyReference.cache
+\\Pc14\f\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.adding_places.resources
+\\Pc14\f\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.adding_groups.resources
+\\Pc14\f\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.Preview.resources
+\\Pc14\f\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.Search.resources
+\\Pc14\f\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.MainWindow.resources
+\\Pc14\f\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.Entry.resources
+\\Pc14\f\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.Form3.resources
+\\Pc14\f\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.Attendance.resources
+\\Pc14\f\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.Payment.resources
+\\Pc14\f\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.Exam.resources
+\\Pc14\f\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.Properties.Resources.resources
+\\Pc14\f\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.MainWindow.ar.resources
+\\Pc14\f\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.csproj.GenerateResource.Cache
+\\Pc14\f\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\ar\El_Kosier.resources.dll
+\\Pc14\f\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.Form2.resources
+\\Pc14\f\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.Form5.resources
+F:\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.StudentAttendance.resources
+F:\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.StudentExams.resources
+F:\Mahmoud\Mahmoud akher wad3\Mahmoud akher wad3\El_Kosier\obj\x86\Debug\El_Kosier.StudentPayment.resources
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\bin\Debug\El_Kosier.exe.config
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\bin\Debug\El_Kosier.exe
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\bin\Debug\El_Kosier.pdb
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\bin\Debug\ar\El_Kosier.resources.dll
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.csprojAssemblyReference.cache
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.adding_places.resources
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.adding_groups.resources
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.StudentAttendance.resources
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.Preview.resources
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.Search.resources
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.MainWindow.resources
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.Entry.resources
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.Form3.resources
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.Attendance.resources
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.Payment.resources
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.Exam.resources
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.Properties.Resources.resources
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.StudentExams.resources
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.StudentPayment.resources
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.MainWindow.ar.resources
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.csproj.GenerateResource.cache
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.csproj.CoreCompileInputs.cache
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\ar\El_Kosier.resources.dll
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.exe
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.pdb

@@ -1,0 +1,11 @@
+F:\Yahia\Mahmoud\Mahmoud\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.MainWindow.resources
+F:\Yahia\Mahmoud\Mahmoud\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Entry.resources
+F:\Yahia\Mahmoud\Mahmoud\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Form3.resources
+F:\Yahia\Mahmoud\Mahmoud\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Form5.resources
+F:\Yahia\Mahmoud\Mahmoud\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Form6.resources
+F:\Yahia\Mahmoud\Mahmoud\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Form7.resources
+F:\Yahia\Mahmoud\Mahmoud\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Form8.resources
+F:\Yahia\Mahmoud\Mahmoud\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\El_Kosier.Properties.Resources.resources
+F:\Yahia\Mahmoud\Mahmoud\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.MainWindow.ar.resources
+F:\Yahia\Mahmoud\Mahmoud\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\El-Kosier.csproj.GenerateResource.Cache
+F:\Yahia\Mahmoud\Mahmoud\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\El-Kosier.exe.config
