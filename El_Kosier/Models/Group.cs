@@ -34,12 +34,30 @@ namespace El_Kosier.Models
             }
         }
 
+        public static List<string> getAllGroupsNameById(int placeId)
+        {
+            List<string> groupsName = new List<string>();
+            SqlConnection cn = new SqlConnection(env.db_con_str);
+            cn.Open();
+            string query = $"SELECT group_name FROM \"group\" Where place_id =  {placeId}";
+            using (SqlCommand cmd = new SqlCommand(query, cn))
+            {
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    groupsName.Add(reader.GetValue(0).ToString());
+                }
+                cn.Close();
+                return groupsName;
+            }
+        }
+
         public static int getGroupIdByName(string groupName)
         {
             int groupId;
             SqlConnection cn = new SqlConnection(env.db_con_str);
             cn.Open();
-            string query = $"SELECT id FROM \"group\" WHERE group_name =  {groupName}"; ;
+            string query = $"SELECT id FROM \"group\" WHERE group_name LIKE '{groupName}'";
             using (SqlCommand cmd = new SqlCommand(query, cn))
             {
                 SqlDataReader reader = cmd.ExecuteReader();

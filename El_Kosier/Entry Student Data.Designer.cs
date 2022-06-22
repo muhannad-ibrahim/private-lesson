@@ -38,7 +38,6 @@
             this.Label7 = new System.Windows.Forms.Label();
             this.studentNameTextBox3 = new System.Windows.Forms.TextBox();
             this.Label5 = new System.Windows.Forms.Label();
-            this.studentIdTextBox2 = new System.Windows.Forms.TextBox();
             this.groupComboBox10 = new System.Windows.Forms.ComboBox();
             this.placeComboBox9 = new System.Windows.Forms.ComboBox();
             this.Label4 = new System.Windows.Forms.Label();
@@ -49,6 +48,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.studentNumberTextBox1 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.idStudentTextBox2 = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.idStudentTextBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // saveButton
@@ -170,38 +171,11 @@
             this.Label5.Text = "Student Name";
             this.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // studentIdTextBox2
-            // 
-            this.studentIdTextBox2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentIdTextBox2.Location = new System.Drawing.Point(633, 150);
-            this.studentIdTextBox2.Name = "studentIdTextBox2";
-            this.studentIdTextBox2.Size = new System.Drawing.Size(177, 30);
-            this.studentIdTextBox2.TabIndex = 4;
-            this.studentIdTextBox2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.idStudentTextBox2_KeyUp);
-            // 
             // groupComboBox10
             // 
+            this.groupComboBox10.Enabled = false;
             this.groupComboBox10.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupComboBox10.FormattingEnabled = true;
-            this.groupComboBox10.Items.AddRange(new object[] {
-            "Prim 4A",
-            "Prim 4B",
-            "Prim 5A",
-            "Prim 5B",
-            "Prim 6A",
-            "Prim 6B",
-            "Prep 1A",
-            "Prep 1B",
-            "Prep 2A",
-            "Prep 2B",
-            "Prep 3A",
-            "Prep 3B",
-            "Sec 1A",
-            "Sec 1B",
-            "Sec 2A",
-            "Sec 2B",
-            "Sec 3A",
-            "Sec 3B"});
             this.groupComboBox10.Location = new System.Drawing.Point(633, 90);
             this.groupComboBox10.Name = "groupComboBox10";
             this.groupComboBox10.Size = new System.Drawing.Size(177, 31);
@@ -212,13 +186,11 @@
             // 
             this.placeComboBox9.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.placeComboBox9.FormattingEnabled = true;
-            this.placeComboBox9.Items.AddRange(new object[] {
-            "Dessouk",
-            "Kafr Magar"});
             this.placeComboBox9.Location = new System.Drawing.Point(227, 90);
             this.placeComboBox9.Name = "placeComboBox9";
             this.placeComboBox9.Size = new System.Drawing.Size(177, 31);
             this.placeComboBox9.TabIndex = 1;
+            this.placeComboBox9.SelectedIndexChanged += new System.EventHandler(this.placeComboBox9_SelectedIndexChanged);
             this.placeComboBox9.KeyUp += new System.Windows.Forms.KeyEventHandler(this.placeComboBox9_KeyUp);
             // 
             // Label4
@@ -273,9 +245,10 @@
             // 
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(227, 150);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(177, 30);
+            this.dateTimePicker1.Size = new System.Drawing.Size(120, 30);
             this.dateTimePicker1.TabIndex = 3;
             this.dateTimePicker1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dateTimePicker1_KeyUp);
             // 
@@ -312,6 +285,15 @@
             this.label9.TabIndex = 91;
             this.label9.Text = "Entry Student Data";
             // 
+            // idStudentTextBox2
+            // 
+            this.idStudentTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idStudentTextBox2.Location = new System.Drawing.Point(633, 150);
+            this.idStudentTextBox2.Name = "idStudentTextBox2";
+            this.idStudentTextBox2.Size = new System.Drawing.Size(120, 29);
+            this.idStudentTextBox2.TabIndex = 92;
+            this.idStudentTextBox2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.idStudentTextBox2_KeyUp);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -319,6 +301,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(827, 638);
+            this.Controls.Add(this.idStudentTextBox2);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.studentNumberTextBox1);
             this.Controls.Add(this.label10);
@@ -333,7 +316,6 @@
             this.Controls.Add(this.Label7);
             this.Controls.Add(this.studentNameTextBox3);
             this.Controls.Add(this.Label5);
-            this.Controls.Add(this.studentIdTextBox2);
             this.Controls.Add(this.groupComboBox10);
             this.Controls.Add(this.placeComboBox9);
             this.Controls.Add(this.Label4);
@@ -344,6 +326,7 @@
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Entry Student Data";
+            ((System.ComponentModel.ISupportInitialize)(this.idStudentTextBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -361,7 +344,6 @@
         private System.Windows.Forms.Label Label7;
         private System.Windows.Forms.TextBox studentNameTextBox3;
         private System.Windows.Forms.Label Label5;
-        private System.Windows.Forms.TextBox studentIdTextBox2;
         private System.Windows.Forms.ComboBox groupComboBox10;
         private System.Windows.Forms.ComboBox placeComboBox9;
         private System.Windows.Forms.Label Label4;
@@ -372,11 +354,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox studentNumberTextBox1;
         private System.Windows.Forms.Label label9;
-
-
-
-
-
-
+        private System.Windows.Forms.NumericUpDown idStudentTextBox2;
     }
 }

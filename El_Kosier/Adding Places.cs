@@ -24,8 +24,16 @@ namespace El_Kosier
 
         private void runButton_Click(object sender, EventArgs e)
         {
-            Place.insertPlace(textBox1.Text.ToString());
-            this.Close();
+            if (!String.IsNullOrEmpty(textBox1.Text))
+            {
+                Place.insertPlace(textBox1.Text.ToString());
+                MessageBox.Show("Done !");
+                this.Close();
+            }
+            else {
+                MessageBox.Show("please enter the name of the place");
+            }
+            
         }
     }
 }

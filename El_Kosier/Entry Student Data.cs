@@ -15,6 +15,12 @@ namespace El_Kosier
         public Form3()
         {
             InitializeComponent();
+            List<string> placesName = Place.getAllplacesName();
+            foreach (string name in placesName)
+            {
+                placeComboBox9.Items.Add(name);
+            }
+            idStudentTextBox2.Value = Student.getMaxStudentCode() + 1;
         }
                 
         private void placeComboBox9_KeyUp(object sender, KeyEventArgs e)
@@ -36,19 +42,19 @@ namespace El_Kosier
         {
             if (e.KeyCode == Keys.Enter)
             {
-                studentIdTextBox2.Focus();
+                idStudentTextBox2.Focus();
             }
         }
 
         private void idStudentTextBox2_KeyUp(object sender, KeyEventArgs e)
         {
-             if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter)
             {
                 studentNameTextBox3.Focus();
             }
         }
 
-        private void studentNameTextBox3_KeyUp(object sender, KeyEventArgs e)
+    private void studentNameTextBox3_KeyUp(object sender, KeyEventArgs e)
         {
              if (e.KeyCode == Keys.Enter)
             {
@@ -96,8 +102,8 @@ namespace El_Kosier
         private void saveButton_Click(object sender, EventArgs e)
         {
             string studentName = studentNameTextBox3.Text.ToString();
-            string studentCode = studentIdTextBox2.Text;
-            string grade = gradeComboBox11.SelectedText.ToString();
+            int studentCode = (int)idStudentTextBox2.Value;
+            string grade = gradeComboBox11.SelectedItem.ToString();
             string parentNumber = guardianNumberTextBox4.Text.ToString();
             string notes = notesTextBox5.Text.ToString();
             int placeId = Place.getPlaceIdByName(placeComboBox9.SelectedItem.ToString());
@@ -106,6 +112,18 @@ namespace El_Kosier
             string enrollDate = dateTimePicker1.Text.ToString();
 
             Student.insertStudent(studentName, studentCode, grade, parentNumber, notes, studentNumber, enrollDate, placeId, groupId);
+        }
+
+        private void placeComboBox9_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            groupComboBox10.Enabled = true;
+            groupComboBox10.Items.Clear();
+            int placeId = Place.getPlaceIdByName(placeComboBox9.SelectedItem.ToString());
+            List<string> groupsName = Group.getAllGroupsNameById(placeId);
+            foreach (string name in groupsName)
+            {
+                groupComboBox10.Items.Add(name);
+            }
         }
     }
 }

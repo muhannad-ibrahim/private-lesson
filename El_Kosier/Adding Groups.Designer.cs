@@ -28,12 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.addButton = new System.Windows.Forms.Button();
             this.nameTextBox1 = new System.Windows.Forms.TextBox();
             this.returnButton = new System.Windows.Forms.Button();
             this.placeComboBox9 = new System.Windows.Forms.ComboBox();
+            this.placeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database1DataSet = new El_Kosier.Database1DataSet();
             this.Label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.placeTableAdapter = new El_Kosier.Database1DataSetTableAdapters.placeTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.placeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // addButton
@@ -78,14 +84,21 @@
             // 
             this.placeComboBox9.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.placeComboBox9.FormattingEnabled = true;
-            this.placeComboBox9.Items.AddRange(new object[] {
-            "Dessouk",
-            "Kafr Magar"});
             this.placeComboBox9.Location = new System.Drawing.Point(134, 30);
             this.placeComboBox9.Name = "placeComboBox9";
             this.placeComboBox9.Size = new System.Drawing.Size(187, 31);
             this.placeComboBox9.TabIndex = 1;
             this.placeComboBox9.KeyUp += new System.Windows.Forms.KeyEventHandler(this.placeComboBox9_KeyUp);
+            // 
+            // placeBindingSource
+            // 
+            this.placeBindingSource.DataMember = "place";
+            this.placeBindingSource.DataSource = this.database1DataSet;
+            // 
+            // database1DataSet
+            // 
+            this.database1DataSet.DataSetName = "Database1DataSet";
+            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Label1
             // 
@@ -111,12 +124,16 @@
             this.label2.Text = "Name";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // placeTableAdapter
+            // 
+            this.placeTableAdapter.ClearBeforeFill = true;
+            // 
             // adding_groups
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(375, 184);
+            this.ClientSize = new System.Drawing.Size(375, 190);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.placeComboBox9);
             this.Controls.Add(this.Label1);
@@ -127,6 +144,9 @@
             this.Name = "adding_groups";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Adding Groups";
+            this.Load += new System.EventHandler(this.adding_groups_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.placeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,5 +160,8 @@
         private System.Windows.Forms.ComboBox placeComboBox9;
         private System.Windows.Forms.Label Label1;
         private System.Windows.Forms.Label label2;
+        private Database1DataSet database1DataSet;
+        private System.Windows.Forms.BindingSource placeBindingSource;
+        private Database1DataSetTableAdapters.placeTableAdapter placeTableAdapter;
     }
 }

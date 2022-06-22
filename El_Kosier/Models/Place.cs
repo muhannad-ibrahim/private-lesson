@@ -33,15 +33,33 @@ namespace El_Kosier.Models
             }
         }
 
+        public static List<string> getAllplacesName() {
+            List<string> placesName = new List<string>();
+            SqlConnection cn = new SqlConnection(env.db_con_str);
+            cn.Open();
+            string query = "SELECT place_name FROM place";
+            using (SqlCommand cmd = new SqlCommand(query, cn))
+            {
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    placesName.Add(reader.GetValue(0).ToString());
+                }
+                cn.Close();
+                return placesName;
+            }
+        }
+
         public static int getPlaceIdByName(string placeName) {
             int placeId;
             SqlConnection cn = new SqlConnection(env.db_con_str);
             cn.Open();
-            string query = $"SELECT id FROM place WHERE place_name LIKE '{placeName}' "; ;
+            string query = $"SELECT id FROM place WHERE place_name LIKE '{placeName}' ";
             using (SqlCommand cmd = new SqlCommand(query, cn))
             {
-                cmd.ExecuteNonQuery();
-                placeId = (int)cmd.ExecuteScalar();
+                SqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                placeId = (int)reader.GetValue(0);
                 cn.Close();
                 return placeId;
             }
