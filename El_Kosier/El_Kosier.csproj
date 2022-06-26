@@ -73,14 +73,12 @@
     <Compile Include="Adding Groups.Designer.cs">
       <DependentUpon>Adding Groups.cs</DependentUpon>
     </Compile>
-    <Compile Include="Database1DataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Database1DataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="env.cs" />
     <Compile Include="envExample.cs" />
+    <Compile Include="Models\Attendance.cs" />
+    <Compile Include="Models\Exam.cs" />
     <Compile Include="Models\Group.cs" />
+    <Compile Include="Models\Payment.cs" />
     <Compile Include="Models\Place.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Student Attendance.cs">
@@ -119,23 +117,23 @@
     <Compile Include="Entry Student Data.Designer.cs">
       <DependentUpon>Entry Student Data.cs</DependentUpon>
     </Compile>
-    <Compile Include="Attendance.cs">
+    <Compile Include="Adding Attendance.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Attendance.Designer.cs">
-      <DependentUpon>Attendance.cs</DependentUpon>
+    <Compile Include="Adding Attendance.Designer.cs">
+      <DependentUpon>Adding Attendance.cs</DependentUpon>
     </Compile>
-    <Compile Include="Payment.cs">
+    <Compile Include="Adding Payment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Payment.Designer.cs">
-      <DependentUpon>Payment.cs</DependentUpon>
+    <Compile Include="Adding Payment.Designer.cs">
+      <DependentUpon>Adding Payment.cs</DependentUpon>
     </Compile>
-    <Compile Include="Exam.cs">
+    <Compile Include="Adding Exam.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Exam.Designer.cs">
-      <DependentUpon>Exam.cs</DependentUpon>
+    <Compile Include="Adding Exam.Designer.cs">
+      <DependentUpon>Adding Exam.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -178,14 +176,14 @@
     <EmbeddedResource Include="Entry Student Data.resx">
       <DependentUpon>Entry Student Data.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Attendance.resx">
-      <DependentUpon>Attendance.cs</DependentUpon>
+    <EmbeddedResource Include="Adding Attendance.resx">
+      <DependentUpon>Adding Attendance.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Payment.resx">
-      <DependentUpon>Payment.cs</DependentUpon>
+    <EmbeddedResource Include="Adding Payment.resx">
+      <DependentUpon>Adding Payment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Exam.resx">
-      <DependentUpon>Exam.cs</DependentUpon>
+    <EmbeddedResource Include="Adding Exam.resx">
+      <DependentUpon>Adding Exam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -204,17 +202,6 @@
       <DependentUpon>Student Payment.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
-    <None Include="Database1DataSet.xsc">
-      <DependentUpon>Database1DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Database1DataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Database1DataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Database1DataSet.xss">
-      <DependentUpon>Database1DataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -234,7 +221,6 @@
   <ItemGroup>
     <None Include="Resources\5166950.jpg" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="Database1.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

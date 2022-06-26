@@ -50,10 +50,65 @@ namespace El_Kosier.Models
             cn.Open();
             string query = "SELECT MAX(student_code) from student";
             SqlCommand cmd = new SqlCommand(query, cn);
-            cmd.ExecuteNonQuery();
-            int maxCode = (int)cmd.ExecuteScalar();
-            cn.Close();
-            return maxCode;
+            object code = cmd.ExecuteScalar();
+            if (code.GetType() == typeof(DBNull)) {
+                cn.Close();
+                return 0;
+            }
+            else {
+                int maxCode = (int)code;
+                cn.Close();
+                return maxCode;
+            }
+        }
+
+        public static List<string> getAllStudentName()
+        {
+            List<string> studentsName = new List<string>();
+            SqlConnection cn = new SqlConnection(env.db_con_str);
+            cn.Open();
+            string query = "SELECT student_name FROM student";
+            using (SqlCommand cmd = new SqlCommand(query, cn))
+            {
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    studentsName.Add(reader.GetValue(0).ToString());
+                }
+                cn.Close();
+                return studentsName;
+            }
+        }
+
+        public static int getStudentCodeByName(string studentName)
+        {
+            int studentCode;
+            SqlConnection cn = new SqlConnection(env.db_con_str);
+            cn.Open();
+            string query = $"SELECT student_code FROM student WHERE student_name LIKE '{studentName}' ";
+            using (SqlCommand cmd = new SqlCommand(query, cn))
+            {
+                SqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                studentCode = (int)reader.GetValue(0);
+                cn.Close();
+                return studentCode;
+            }
+        }
+
+        public static int getStudentIdByName(string studentName) {
+            int studentId;
+            SqlConnection cn = new SqlConnection(env.db_con_str);
+            cn.Open();
+            string query = $"SELECT id FROM student WHERE student_name LIKE '{studentName}' ";
+            using (SqlCommand cmd = new SqlCommand(query, cn))
+            {
+                SqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                studentId = (int)reader.GetValue(0);
+                cn.Close();
+                return studentId;
+            }
         }
     }
 }

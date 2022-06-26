@@ -19,7 +19,7 @@ namespace El_Kosier.Models
             if (cn.State == System.Data.ConnectionState.Open)
             {
 
-                string query = "insert into \"group\" (group_name,place_id) values(" + "'" + groupName + " ',' " + placeId + "' )";
+                string query = "insert into \"group\" (group_name,place_id) values(" + "N'" + groupName + " ',' " + placeId + "' )";
                 SqlCommand cmd = new SqlCommand(query, cn);
                 try
                 {

@@ -54,18 +54,12 @@ namespace El_Kosier
             {
                 int placeId = Place.getPlaceIdByName(placeComboBox9.SelectedItem.ToString());
                 Group.insertGroup(nameTextBox1.Text, placeId);
+                MessageBox.Show("Done !");
                 this.Close();
             }
             else {
                 MessageBox.Show("please check if you didn't write name for the group or select a place");
             }
-        }
-
-        private void adding_groups_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'database1DataSet.place' table. You can move, or remove it, as needed.
-            this.placeTableAdapter.Fill(this.database1DataSet.place);
-
         }
         
     }

@@ -18,7 +18,7 @@ namespace El_Kosier.Models
             if (cn.State == System.Data.ConnectionState.Open)
             {
 
-                string query = "insert into place(place_name) values(" + "'" + placeName + "' )";
+                string query = "insert into place(place_name) values( N'" + placeName + "' )";
                 SqlCommand cmd = new SqlCommand(query, cn);
                 try
                 {
@@ -26,7 +26,7 @@ namespace El_Kosier.Models
                 }
                 catch (System.Data.SqlClient.SqlException ex)
                 {
-                    MessageBox.Show("Error during enter the place name");
+                    MessageBox.Show(ex.Errors.ToString());
                 }
                 cn.Close();
 
