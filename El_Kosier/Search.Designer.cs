@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.returnButton = new System.Windows.Forms.Button();
             this.groupComboBox18 = new System.Windows.Forms.ComboBox();
             this.studentNameComboBox15 = new System.Windows.Forms.ComboBox();
@@ -40,10 +43,6 @@
             this.totalLabel = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.label2 = new System.Windows.Forms.Label();
             this.filterByComboBox1 = new System.Windows.Forms.ComboBox();
@@ -51,9 +50,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.monthComboBox1 = new System.Windows.Forms.ComboBox();
             this.lectureNumberComboBox3 = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.statusComboBox1 = new System.Windows.Forms.ComboBox();
-            this.printProfileButton1 = new System.Windows.Forms.Button();
+            this.refreshButton1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.studentIdTextBox10 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -76,27 +73,9 @@
             // groupComboBox18
             // 
             this.groupComboBox18.BackColor = System.Drawing.SystemColors.Window;
+            this.groupComboBox18.Enabled = false;
             this.groupComboBox18.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupComboBox18.FormattingEnabled = true;
-            this.groupComboBox18.Items.AddRange(new object[] {
-            "Prim 4A",
-            "Prim 4B",
-            "Prim 5A",
-            "Prim 5B",
-            "Prim 6A",
-            "Prim 6B",
-            "Prep 1A",
-            "Prep 1B",
-            "Prep 2A",
-            "Prep 2B",
-            "Prep 3A",
-            "Prep 3B",
-            "Sec 1A",
-            "Sec 1B",
-            "Sec 2A",
-            "Sec 2B",
-            "Sec 3A",
-            "Sec 3B"});
             this.groupComboBox18.Location = new System.Drawing.Point(218, 227);
             this.groupComboBox18.Name = "groupComboBox18";
             this.groupComboBox18.Size = new System.Drawing.Size(142, 31);
@@ -105,6 +84,7 @@
             // 
             // studentNameComboBox15
             // 
+            this.studentNameComboBox15.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.studentNameComboBox15.BackColor = System.Drawing.SystemColors.Window;
             this.studentNameComboBox15.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentNameComboBox15.FormattingEnabled = true;
@@ -113,6 +93,7 @@
             this.studentNameComboBox15.Name = "studentNameComboBox15";
             this.studentNameComboBox15.Size = new System.Drawing.Size(387, 31);
             this.studentNameComboBox15.TabIndex = 0;
+            this.studentNameComboBox15.SelectedIndexChanged += new System.EventHandler(this.studentNameComboBox15_SelectedIndexChanged);
             this.studentNameComboBox15.KeyUp += new System.Windows.Forms.KeyEventHandler(this.studentNameComboBox17_KeyUp);
             // 
             // Label4
@@ -145,13 +126,11 @@
             this.placeComboBox17.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.placeComboBox17.FormattingEnabled = true;
             this.placeComboBox17.ItemHeight = 23;
-            this.placeComboBox17.Items.AddRange(new object[] {
-            "Dessouk",
-            "Kafr Magar"});
             this.placeComboBox17.Location = new System.Drawing.Point(218, 177);
             this.placeComboBox17.Name = "placeComboBox17";
             this.placeComboBox17.Size = new System.Drawing.Size(141, 31);
             this.placeComboBox17.TabIndex = 2;
+            this.placeComboBox17.SelectedIndexChanged += new System.EventHandler(this.placeComboBox17_SelectedIndexChanged);
             this.placeComboBox17.KeyUp += new System.Windows.Forms.KeyEventHandler(this.placeComboBox17_KeyUp);
             // 
             // Label1
@@ -217,41 +196,31 @@
             // 
             // dataGridView1
             // 
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4});
             this.dataGridView1.Location = new System.Drawing.Point(8, 314);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridView1.Size = new System.Drawing.Size(785, 286);
             this.dataGridView1.TabIndex = 40;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Student Name";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 305;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "ID Student";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 138;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Place";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 138;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Group";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 138;
+            this.dataGridView1.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dataGridView1_RowsAdded);
             // 
             // vScrollBar1
             // 
@@ -278,7 +247,7 @@
             this.filterByComboBox1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.filterByComboBox1.FormattingEnabled = true;
             this.filterByComboBox1.Items.AddRange(new object[] {
-            "",
+            " ",
             "Attendance",
             "Payment",
             "Exam"});
@@ -307,7 +276,7 @@
             this.label6.BackColor = System.Drawing.Color.Silver;
             this.label6.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(408, 227);
+            this.label6.Location = new System.Drawing.Point(408, 176);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(197, 30);
             this.label6.TabIndex = 89;
@@ -320,7 +289,6 @@
             this.monthComboBox1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.monthComboBox1.FormattingEnabled = true;
             this.monthComboBox1.Items.AddRange(new object[] {
-            "",
             "1",
             "2",
             "3",
@@ -338,14 +306,15 @@
             this.monthComboBox1.Size = new System.Drawing.Size(62, 31);
             this.monthComboBox1.TabIndex = 5;
             this.monthComboBox1.Visible = false;
+            this.monthComboBox1.SelectedIndexChanged += new System.EventHandler(this.monthComboBox1_SelectedIndexChanged);
             this.monthComboBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.monthComboBox1_KeyUp);
             // 
             // lectureNumberComboBox3
             // 
+            this.lectureNumberComboBox3.Enabled = false;
             this.lectureNumberComboBox3.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lectureNumberComboBox3.FormattingEnabled = true;
             this.lectureNumberComboBox3.Items.AddRange(new object[] {
-            "",
             "1",
             "2",
             "3",
@@ -354,53 +323,25 @@
             "6",
             "7",
             "8"});
-            this.lectureNumberComboBox3.Location = new System.Drawing.Point(618, 227);
+            this.lectureNumberComboBox3.Location = new System.Drawing.Point(618, 176);
             this.lectureNumberComboBox3.Name = "lectureNumberComboBox3";
             this.lectureNumberComboBox3.Size = new System.Drawing.Size(62, 31);
             this.lectureNumberComboBox3.TabIndex = 7;
             this.lectureNumberComboBox3.Visible = false;
             this.lectureNumberComboBox3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.lectureNumberComboBox3_KeyUp);
             // 
-            // label7
+            // refreshButton1
             // 
-            this.label7.BackColor = System.Drawing.Color.Silver;
-            this.label7.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(408, 177);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(197, 30);
-            this.label7.TabIndex = 92;
-            this.label7.Text = "Status";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label7.Visible = false;
-            // 
-            // statusComboBox1
-            // 
-            this.statusComboBox1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statusComboBox1.FormattingEnabled = true;
-            this.statusComboBox1.Items.AddRange(new object[] {
-            "",
-            "Both",
-            "Yes",
-            "No"});
-            this.statusComboBox1.Location = new System.Drawing.Point(618, 177);
-            this.statusComboBox1.Name = "statusComboBox1";
-            this.statusComboBox1.Size = new System.Drawing.Size(62, 31);
-            this.statusComboBox1.TabIndex = 6;
-            this.statusComboBox1.Visible = false;
-            this.statusComboBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.statusComboBox1_KeyUp);
-            // 
-            // printProfileButton1
-            // 
-            this.printProfileButton1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.printProfileButton1.Font = new System.Drawing.Font("Cooper Black", 12F);
-            this.printProfileButton1.ForeColor = System.Drawing.Color.White;
-            this.printProfileButton1.Location = new System.Drawing.Point(451, 621);
-            this.printProfileButton1.Name = "printProfileButton1";
-            this.printProfileButton1.Size = new System.Drawing.Size(111, 35);
-            this.printProfileButton1.TabIndex = 93;
-            this.printProfileButton1.Text = "Print";
-            this.printProfileButton1.UseVisualStyleBackColor = false;
+            this.refreshButton1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.refreshButton1.Font = new System.Drawing.Font("Cooper Black", 12F);
+            this.refreshButton1.ForeColor = System.Drawing.Color.White;
+            this.refreshButton1.Location = new System.Drawing.Point(451, 621);
+            this.refreshButton1.Name = "refreshButton1";
+            this.refreshButton1.Size = new System.Drawing.Size(111, 35);
+            this.refreshButton1.TabIndex = 93;
+            this.refreshButton1.Text = "Refresh";
+            this.refreshButton1.UseVisualStyleBackColor = false;
+            this.refreshButton1.Click += new System.EventHandler(this.refreshButton1_Click);
             // 
             // label8
             // 
@@ -444,9 +385,7 @@
             this.Controls.Add(this.studentIdTextBox10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.printProfileButton1);
-            this.Controls.Add(this.statusComboBox1);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.refreshButton1);
             this.Controls.Add(this.lectureNumberComboBox3);
             this.Controls.Add(this.monthComboBox1);
             this.Controls.Add(this.label6);
@@ -498,13 +437,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox monthComboBox1;
         private System.Windows.Forms.ComboBox lectureNumberComboBox3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox statusComboBox1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.Button printProfileButton1;
+        private System.Windows.Forms.Button refreshButton1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox studentIdTextBox10;
         private System.Windows.Forms.Label label9;

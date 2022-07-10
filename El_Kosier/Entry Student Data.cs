@@ -112,6 +112,9 @@ namespace El_Kosier
             string enrollDate = dateTimePicker1.Text.ToString();
 
             Student.insertStudent(studentName, studentCode, grade, parentNumber, notes, studentNumber, enrollDate, placeId, groupId);
+            this.Close();
+            Form3 frm = new Form3();
+            frm.Show();
         }
 
         private void placeComboBox9_SelectedIndexChanged(object sender, EventArgs e)
