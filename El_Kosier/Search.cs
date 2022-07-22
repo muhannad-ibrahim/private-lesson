@@ -30,8 +30,10 @@ namespace El_Kosier
 
         private void previewButton_Click(object sender, EventArgs e)
         {
-            Preview f = new Preview();
-            f.Show();
+            String studentName = (String)dataGridView1.SelectedRows[0].Cells[0].Value;
+            int studentId = Student.getStudentIdByName(studentName);
+            Preview studentPassedData = new Preview(studentId);
+            studentPassedData.ShowDialog(this);
         }
 
         private void returnButton_Click(object sender, EventArgs e)
@@ -389,6 +391,14 @@ namespace El_Kosier
         private void monthComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             lectureNumberComboBox3.Enabled = true;
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            String studentName = (String)dataGridView1.SelectedRows[0].Cells[0].Value;
+            int studentId = Student.getStudentIdByName(studentName);
+            Preview studentPassedData = new Preview(studentId);
+            studentPassedData.ShowDialog(this);
         }
     }
 }

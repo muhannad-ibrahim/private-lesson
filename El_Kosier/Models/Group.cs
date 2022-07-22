@@ -67,5 +67,21 @@ namespace El_Kosier.Models
                 return groupId;
             }
         }
+
+        public static string getGroupNameById(int groupId)
+        {
+            string groupName;
+            SqlConnection cn = new SqlConnection(env.db_con_str);
+            cn.Open();
+            string query = $"SELECT group_name FROM \"group\" WHERE id = {groupId}";
+            using (SqlCommand cmd = new SqlCommand(query, cn))
+            {
+                SqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                groupName = reader.GetValue(0).ToString();
+                cn.Close();
+                return groupName;
+            }
+        }
     }
 }

@@ -64,5 +64,21 @@ namespace El_Kosier.Models
                 return placeId;
             }
         }
+
+        public static string getPlaceNameById(int placeId)
+        {
+            string placeName;
+            SqlConnection cn = new SqlConnection(env.db_con_str);
+            cn.Open();
+            string query = $"SELECT place_name FROM place WHERE id = {placeId}";
+            using (SqlCommand cmd = new SqlCommand(query, cn))
+            {
+                SqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                placeName = reader.GetValue(0).ToString();
+                cn.Close();
+                return placeName;
+            }
+        }
     }
 }

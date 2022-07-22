@@ -134,7 +134,7 @@ namespace El_Kosier.Models
                 }
             }
         }
-
+        
         public static DataTable getStudentsPlace_Group(int placeId, int groupId) {
             SqlCommand cmd = new SqlCommand();
             using (SqlConnection cn = new SqlConnection(env.db_con_str))

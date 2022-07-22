@@ -81,17 +81,17 @@
     <Compile Include="Models\Payment.cs" />
     <Compile Include="Models\Place.cs" />
     <Compile Include="Models\Student.cs" />
-    <Compile Include="Student Attendance.cs">
+    <Compile Include="Student_Attendance.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Student Attendance.Designer.cs">
-      <DependentUpon>Student Attendance.cs</DependentUpon>
+    <Compile Include="Student_Attendance.Designer.cs">
+      <DependentUpon>Student_Attendance.cs</DependentUpon>
     </Compile>
-    <Compile Include="Student Data.cs">
+    <Compile Include="Student_Data.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Student Data.Designer.cs">
-      <DependentUpon>Student Data.cs</DependentUpon>
+    <Compile Include="Student_Data.Designer.cs">
+      <DependentUpon>Student_Data.cs</DependentUpon>
     </Compile>
     <Compile Include="Search.cs">
       <SubType>Form</SubType>
@@ -137,17 +137,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Student Exams.cs">
+    <Compile Include="Student_Exams.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Student Exams.Designer.cs">
-      <DependentUpon>Student Exams.cs</DependentUpon>
+    <Compile Include="Student_Exams.Designer.cs">
+      <DependentUpon>Student_Exams.cs</DependentUpon>
     </Compile>
-    <Compile Include="Student Payment.cs">
+    <Compile Include="Student_Payment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Student Payment.Designer.cs">
-      <DependentUpon>Student Payment.cs</DependentUpon>
+    <Compile Include="Student_Payment.Designer.cs">
+      <DependentUpon>Student_Payment.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Adding Places.resx">
       <DependentUpon>Adding Places.cs</DependentUpon>
@@ -155,11 +155,11 @@
     <EmbeddedResource Include="Adding Groups.resx">
       <DependentUpon>Adding Groups.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Student Attendance.resx">
-      <DependentUpon>Student Attendance.cs</DependentUpon>
+    <EmbeddedResource Include="Student_Attendance.resx">
+      <DependentUpon>Student_Attendance.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Student Data.resx">
-      <DependentUpon>Student Data.cs</DependentUpon>
+    <EmbeddedResource Include="Student_Data.resx">
+      <DependentUpon>Student_Data.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Search.resx">
       <DependentUpon>Search.cs</DependentUpon>
@@ -195,11 +195,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Student Exams.resx">
-      <DependentUpon>Student Exams.cs</DependentUpon>
+    <EmbeddedResource Include="Student_Exams.resx">
+      <DependentUpon>Student_Exams.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Student Payment.resx">
-      <DependentUpon>Student Payment.cs</DependentUpon>
+    <EmbeddedResource Include="Student_Payment.resx">
+      <DependentUpon>Student_Payment.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
