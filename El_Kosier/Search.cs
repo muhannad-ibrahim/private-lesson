@@ -30,10 +30,16 @@ namespace El_Kosier
 
         private void previewButton_Click(object sender, EventArgs e)
         {
-            String studentName = (String)dataGridView1.SelectedRows[0].Cells[0].Value;
-            int studentId = Student.getStudentIdByName(studentName);
-            Preview studentPassedData = new Preview(studentId);
-            studentPassedData.ShowDialog(this);
+            if (dataGridView1.Rows.Count > 0)
+            {
+                String studentName = (String)dataGridView1.SelectedRows[0].Cells[0].Value;
+                int studentId = Student.getStudentIdByName(studentName);
+                Preview studentPassedData = new Preview(studentId);
+                studentPassedData.ShowDialog(this);
+            }
+            else {
+                MessageBox.Show("Sorry, There's no data to view");
+            }
         }
 
         private void returnButton_Click(object sender, EventArgs e)
@@ -48,6 +54,14 @@ namespace El_Kosier
 
         private void runButton_Click(object sender, EventArgs e)
         {
+            if ((studentNameComboBox15.Text == "") & ((placeComboBox17.SelectedIndex < 0) || (placeComboBox17.Text == " ")) & (filterByComboBox1.SelectedIndex < 0))
+            {
+                DataTable dt = Student.getAllStudentData();
+                this.dataGridView1.DataSource = dt;
+                dataGridView1.Columns[0].Width = 200;
+                dataGridView1.Columns[1].Width = 40;
+                return;
+            }
             if ((studentNameComboBox15.Text != "") & ((placeComboBox17.SelectedIndex < 0) || (placeComboBox17.Text == " ")) & (filterByComboBox1.SelectedIndex < 0))
             {
                 DataTable dt = Student.getStudentData(studentNameComboBox15.Text);
@@ -378,7 +392,7 @@ namespace El_Kosier
 
         private void dataGridView1_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
         {
-            textBox1.Text = Convert.ToString(dataGridView1.Rows.Count - 1);
+            textBox1.Text = Convert.ToString(dataGridView1.Rows.Count);
         }
 
         private void refreshButton1_Click(object sender, EventArgs e)
@@ -395,10 +409,17 @@ namespace El_Kosier
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            String studentName = (String)dataGridView1.SelectedRows[0].Cells[0].Value;
-            int studentId = Student.getStudentIdByName(studentName);
-            Preview studentPassedData = new Preview(studentId);
-            studentPassedData.ShowDialog(this);
+            if (dataGridView1.Rows.Count > 0)
+            {
+                String studentName = (String)dataGridView1.SelectedRows[0].Cells[0].Value;
+                int studentId = Student.getStudentIdByName(studentName);
+                Preview studentPassedData = new Preview(studentId);
+                studentPassedData.ShowDialog(this);
+            }
+            else
+            {
+                MessageBox.Show("Sorry, There's no data to view");
+            }
         }
     }
 }

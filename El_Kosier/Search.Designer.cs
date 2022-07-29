@@ -433,7 +433,6 @@
         private System.Windows.Forms.Button previewButton;
         private System.Windows.Forms.Label totalLabel;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox filterByComboBox1;
@@ -445,6 +444,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox studentIdTextBox10;
         private System.Windows.Forms.Label label9;
-
+        public System.Windows.Forms.DataGridView dataGridView1;
     }
 }

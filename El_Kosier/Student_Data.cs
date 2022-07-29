@@ -43,7 +43,6 @@ namespace El_Kosier
                     studentReader.Close();
                 }
             }
-            
         }
 
         private void returnButton_Click(object sender, EventArgs e)
@@ -51,24 +50,51 @@ namespace El_Kosier
             this.Close();
         }
 
+        private int getStudentId() {
+
+            String studentName = studentNameTextBox9.Text;
+            int id = Student.getStudentIdByName(studentName);
+            return id;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            StudentAttendance f = new StudentAttendance();
-            f.Show();
+            int studentId = getStudentId();
+            StudentAttendance studentPassedData = new StudentAttendance(studentId);
+            studentPassedData.ShowDialog(this);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            String studentName = studentNameTextBox9.Text;
-            int studentId = Student.getStudentIdByName(studentName);
+            int studentId = getStudentId();
             StudentPayment studentPassedData = new StudentPayment(studentId);
             studentPassedData.ShowDialog(this);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            StudentExams f = new StudentExams();
-            f.Show();
+            int studentId = getStudentId();
+            StudentExams studentPassedData = new StudentExams(studentId);
+            studentPassedData.ShowDialog(this);
+        }
+
+        private void deletebutton5_Click(object sender, EventArgs e)
+        {
+            int studentId = getStudentId();
+            string message = "By clicking OK, this student will be permenantly DELETED\nmake sure from your choice";
+            string title = "student will be deleted";
+            MessageBoxButtons buttons = MessageBoxButtons.OKCancel;
+            DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+            if (result != DialogResult.OK)
+            {
+                return;
+            }
+            else
+            {
+                Student.deleteStudent(studentId);
+                MessageBox.Show("student is deleted successfully..!");
+                this.Close();
+            }
         }
 
         private void studentNameTextBox9_KeyUp(object sender, KeyEventArgs e)
@@ -142,5 +168,5 @@ namespace El_Kosier
                 savebutton4.Focus();
             }
         }
-     }
+    }
 }

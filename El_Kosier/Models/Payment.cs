@@ -38,7 +38,7 @@ namespace El_Kosier.Models
             int month;
             SqlConnection cn = new SqlConnection(env.db_con_str);
             cn.Open();
-            string query = $"SELECT month FROM payment WHERE id = {studentId}";
+            string query = $"SELECT month FROM payment WHERE student_id = {studentId}";
             using (SqlCommand cmd = new SqlCommand(query, cn))
             {
                 DataTable dt = new DataTable();

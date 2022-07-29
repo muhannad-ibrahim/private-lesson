@@ -30,9 +30,6 @@
         {
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.absentTextBox18 = new System.Windows.Forms.TextBox();
@@ -47,37 +44,15 @@
             this.vScrollBar1.Name = "vScrollBar1";
             this.vScrollBar1.Size = new System.Drawing.Size(20, 466);
             this.vScrollBar1.TabIndex = 58;
-            this.vScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar1_Scroll);
             // 
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column2,
-            this.Column1,
-            this.Column3});
             this.dataGridView1.Location = new System.Drawing.Point(6, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(463, 469);
             this.dataGridView1.TabIndex = 57;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Attendance";
-            this.Column2.Name = "Column2";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Attendance Month";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 150;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Lecture Number";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 150;
             // 
             // label11
             // 
@@ -106,20 +81,22 @@
             // absentTextBox18
             // 
             this.absentTextBox18.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold);
-            this.absentTextBox18.Location = new System.Drawing.Point(6, 507);
+            this.absentTextBox18.Location = new System.Drawing.Point(247, 510);
             this.absentTextBox18.Multiline = true;
             this.absentTextBox18.Name = "absentTextBox18";
             this.absentTextBox18.Size = new System.Drawing.Size(221, 30);
             this.absentTextBox18.TabIndex = 62;
+            this.absentTextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // presentTextBox17
             // 
             this.presentTextBox17.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold);
-            this.presentTextBox17.Location = new System.Drawing.Point(248, 507);
+            this.presentTextBox17.Location = new System.Drawing.Point(6, 510);
             this.presentTextBox17.Multiline = true;
             this.presentTextBox17.Name = "presentTextBox17";
             this.presentTextBox17.Size = new System.Drawing.Size(221, 30);
             this.presentTextBox17.TabIndex = 61;
+            this.presentTextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // returnButton
             // 
@@ -160,9 +137,6 @@
 
         private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox absentTextBox18;

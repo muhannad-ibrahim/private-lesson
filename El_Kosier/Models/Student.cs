@@ -90,7 +90,7 @@ namespace El_Kosier.Models
             int studentCode;
             SqlConnection cn = new SqlConnection(env.db_con_str);
             cn.Open();
-            string query = $"SELECT student_code FROM student WHERE student_name LIKE '{studentName}' ";
+            string query = $"SELECT student_code FROM student WHERE student_name LIKE N'{studentName}' ";
             using (SqlCommand cmd = new SqlCommand(query, cn))
             {
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -106,7 +106,7 @@ namespace El_Kosier.Models
             int studentId;
             SqlConnection cn = new SqlConnection(env.db_con_str);
             cn.Open();
-            string query = $"SELECT id FROM student WHERE student_name LIKE '{studentName}' ";
+            string query = $"SELECT id FROM student WHERE student_name LIKE N'{studentName}'";
             using (SqlCommand cmd = new SqlCommand(query, cn))
             {
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -117,12 +117,42 @@ namespace El_Kosier.Models
             }
         }
 
+        public static void deleteStudent(int studentId) {
+            SqlConnection cn = new SqlConnection(env.db_con_str);
+            cn.Open();
+            if (cn.State == System.Data.ConnectionState.Open)
+            {
+                string query = $"delete from student where id = {studentId}";
+                SqlCommand cmd = new SqlCommand(query, cn);
+                cmd.ExecuteNonQuery();
+                cn.Close();
+            }
+        }
+
+        public static DataTable getAllStudentData()
+        {
+            using (SqlConnection cn = new SqlConnection(env.db_con_str))
+            {
+                cn.Open();
+                using (SqlCommand cmd = new SqlCommand($"SELECT student_name as 'name', student_code as 'code', student_number as 'student num' , grade , p.place_name as 'place' , g.group_name as 'group' FROM student s, place p , \"group\" g WHERE s.place_id= p.id AND s.group_id = g.id", cn))
+                {
+                    DataTable dt = new DataTable();
+                    using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                    {
+                        da.Fill(dt);
+                    }
+                    cn.Close();
+                    return dt;
+                }
+            }
+        }
+
         public static DataTable getStudentData(string studentName)
         {
             using (SqlConnection cn = new SqlConnection(env.db_con_str))
             {
                 cn.Open();
-                using (SqlCommand cmd = new SqlCommand($"SELECT student_name as 'name', student_code as 'code', student_number as 'student num' , grade , p.place_name as 'place' , g.group_name as 'group' FROM student s, place p , \"group\" g WHERE student_name LIKE '%{studentName}%' AND s.place_id= p.id AND s.group_id = g.id", cn))
+                using (SqlCommand cmd = new SqlCommand($"SELECT student_name as 'name', student_code as 'code', student_number as 'student num' , grade , p.place_name as 'place' , g.group_name as 'group' FROM student s, place p , \"group\" g WHERE student_name LIKE N'%{studentName}%' AND s.place_id= p.id AND s.group_id = g.id", cn))
                 {
                     DataTable dt = new DataTable();
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
@@ -165,10 +195,10 @@ namespace El_Kosier.Models
             {
                 cn.Open();
                 if (groupId == 0) {
-                    cmd = new SqlCommand($"SELECT student_name as 'name', student_code as 'code', student_number as 'student num' , grade , p.place_name as 'place' , g.group_name as 'group' FROM student s, place p , \"group\" g WHERE student_name LIKE '%{studentName}%' AND s.place_id = {placeId} AND s.place_id= p.id AND s.group_id = g.id", cn);
+                    cmd = new SqlCommand($"SELECT student_name as 'name', student_code as 'code', student_number as 'student num' , grade , p.place_name as 'place' , g.group_name as 'group' FROM student s, place p , \"group\" g WHERE student_name LIKE N'%{studentName}%' AND s.place_id = {placeId} AND s.place_id= p.id AND s.group_id = g.id", cn);
                 }
                 else {
-                    cmd = new SqlCommand($"SELECT student_name as 'name', student_code as 'code', student_number as 'student num' , grade , p.place_name as 'place' , g.group_name as 'group' FROM student s, place p , \"group\" g WHERE student_name LIKE '%{studentName}%' AND s.place_id = {placeId} AND s.group_id = {groupId} AND s.place_id= p.id AND s.group_id = g.id", cn);
+                    cmd = new SqlCommand($"SELECT student_name as 'name', student_code as 'code', student_number as 'student num' , grade , p.place_name as 'place' , g.group_name as 'group' FROM student s, place p , \"group\" g WHERE student_name LIKE N'%{studentName}%' AND s.place_id = {placeId} AND s.group_id = {groupId} AND s.place_id= p.id AND s.group_id = g.id", cn);
                 }
                 using (cmd)
                 {
