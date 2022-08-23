@@ -9,9 +9,6 @@ namespace El_Kosier.Models
 {
     class Group
     {
-        public int id { get; set; }
-        public string groupName { get; set; }
-
         public static void insertGroup(string groupName, int placeId)
         {
             SqlConnection cn = new SqlConnection(env.db_con_str);

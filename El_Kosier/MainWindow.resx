@@ -148,7 +148,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;entryButton1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
   <data name="searchButton2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Cooper Black, 20.25pt</value>
@@ -175,13 +175,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;searchButton2.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>3</value>
+  </data>
+  <data name="label1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt, style=Bold</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 442</value>
+    <value>12, 275</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>570, 23</value>
@@ -190,7 +193,7 @@
     <value>4</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Developed By : Mahmoud Magdy El-Kosier</value>
+    <value>Developed By Eng: Muhannad Ibrahim AND design by: Mahmoud Magdy</value>
   </data>
   <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -205,66 +208,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="restoreButton1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Cooper Black, 20.25pt</value>
-  </data>
-  <data name="restoreButton1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="restoreButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>333, 210</value>
-  </data>
-  <data name="restoreButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 50</value>
-  </data>
-  <data name="restoreButton1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="restoreButton1.Text" xml:space="preserve">
-    <value>Restore</value>
-  </data>
-  <data name="&gt;&gt;restoreButton1.Name" xml:space="preserve">
-    <value>restoreButton1</value>
-  </data>
-  <data name="&gt;&gt;restoreButton1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;restoreButton1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;restoreButton1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="backUpButton2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Cooper Black, 20.25pt</value>
-  </data>
-  <data name="backUpButton2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="backUpButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 210</value>
-  </data>
-  <data name="backUpButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 50</value>
-  </data>
-  <data name="backUpButton2.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="backUpButton2.Text" xml:space="preserve">
-    <value>Backup</value>
-  </data>
-  <data name="&gt;&gt;backUpButton2.Name" xml:space="preserve">
-    <value>backUpButton2</value>
-  </data>
-  <data name="&gt;&gt;backUpButton2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;backUpButton2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;backUpButton2.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="exitButton3.Font" type="System.Drawing.Font, System.Drawing">
@@ -274,7 +217,7 @@
     <value>NoControl</value>
   </data>
   <data name="exitButton3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>333, 350</value>
+    <value>333, 183</value>
   </data>
   <data name="exitButton3.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 50</value>
@@ -304,7 +247,7 @@
     <value>NoControl</value>
   </data>
   <data name="deleteAllButton4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 350</value>
+    <value>55, 183</value>
   </data>
   <data name="deleteAllButton4.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 50</value>
@@ -343,7 +286,7 @@
     <value>Stretch</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>594, 471</value>
+    <value>594, 309</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

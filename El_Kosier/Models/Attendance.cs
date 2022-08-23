@@ -10,11 +10,6 @@ namespace El_Kosier.Models
 {
     class Attendance
     {
-        public int id { get; set; }
-        public int classNumber { get; set; }
-        public string attendanceType { get; set; }
-        public int month { get; set; }
-
         public static void inertAttendeance(int classNumber , int month, string attendanceType, int studentId)
         {
             SqlConnection cn = new SqlConnection(env.db_con_str);

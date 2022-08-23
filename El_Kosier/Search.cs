@@ -258,11 +258,169 @@ namespace El_Kosier
             }
             if ((filterByComboBox1.SelectedIndex > -1) & (studentNameComboBox15.Text != "") & ((placeComboBox17.SelectedIndex < 0) || (placeComboBox17.Text == " ")))
             {
-
+                string studentName = studentNameComboBox15.Text;
+                int month = 0;
+                DataTable dt = new DataTable();
+                if (filterByComboBox1.SelectedItem.ToString() == "Payment")
+                {
+                    if (monthComboBox1.SelectedIndex > -1)
+                    {
+                        month = Convert.ToInt32(monthComboBox1.Text);
+                        dt = Student.getStudentDataWith_Payment(studentName, month);
+                    }
+                    else
+                    {
+                        MessageBox.Show("You have to select a specific month");
+                        return;
+                    }
+                    
+                }
+                else if (filterByComboBox1.SelectedItem.ToString() == "Attendance")
+                {
+                    int lectureNumber = 0;
+                    if (monthComboBox1.SelectedIndex > -1 && lectureNumberComboBox3.SelectedIndex < 0)
+                    {
+                        month = Convert.ToInt32(monthComboBox1.Text);
+                        dt = Student.getStudentDataWith_Attendance(studentName, month, 0);
+                    }
+                    else if (monthComboBox1.SelectedIndex > -1 && lectureNumberComboBox3.SelectedIndex > -1)
+                    {
+                        month = Convert.ToInt32(monthComboBox1.Text);
+                        lectureNumber = Convert.ToInt32(lectureNumberComboBox3.Text);
+                        dt = Student.getStudentDataWith_Attendance(studentName, month, lectureNumber);
+                    }
+                    else
+                    {
+                        MessageBox.Show("you have to select a specific month and lecture number");
+                        return;
+                    }
+                    
+                }
+                else if (filterByComboBox1.SelectedItem.ToString() == "Exam")
+                {
+                    if (monthComboBox1.SelectedIndex > -1)
+                    {
+                        month = Convert.ToInt32(monthComboBox1.Text);
+                        dt = Student.getStudentDataWith_Exam(studentName, month);
+                    }
+                    else
+                    {
+                        MessageBox.Show("You have to select a specific month");
+                        return;
+                    }
+                }
+                this.dataGridView1.DataSource = dt;
+                dataGridView1.Columns[0].Width = 200;
+                dataGridView1.Columns[1].Width = 40;
+                return;
             }
             if ((filterByComboBox1.SelectedIndex > -1) & (studentNameComboBox15.Text != "") & (placeComboBox17.SelectedIndex > -1) & (placeComboBox17.Text != " "))
             {
-
+                int placeId = Place.getPlaceIdByName(placeComboBox17.SelectedItem.ToString());
+                string studentName = studentNameComboBox15.Text;
+                int month = 0;
+                DataTable dt = new DataTable();
+                if (filterByComboBox1.SelectedItem.ToString() == "Payment")
+                {
+                    if (groupComboBox18.SelectedIndex > -1)
+                    {
+                        int groupId = Group.getGroupIdByName(groupComboBox18.SelectedItem.ToString());
+                        if (monthComboBox1.SelectedIndex > -1)
+                        {
+                            month = Convert.ToInt32(monthComboBox1.Text);
+                            dt = Student.getStudentDataWithPlace_Group_Parment_StudName(studentName,placeId, groupId, month);
+                        }
+                        else
+                        {
+                            dt = Student.getAllPayments_studName(studentName,placeId, groupId);
+                        }
+                    }
+                    else
+                    {
+                        if (monthComboBox1.SelectedIndex > -1)
+                        {
+                            month = Convert.ToInt32(monthComboBox1.Text);
+                            dt = Student.getStudentDataWithPlace_Group_Parment_StudName(studentName, placeId, 0, month);
+                        }
+                        else
+                        {
+                            dt = Student.getAllPayments_studName(studentName, placeId, 0);
+                        }
+                    }
+                }
+                else if (filterByComboBox1.SelectedItem.ToString() == "Attendance")
+                {
+                    int lectureNumber = 0;
+                    if (groupComboBox18.SelectedIndex > -1)
+                    {
+                        int groupId = Group.getGroupIdByName(groupComboBox18.SelectedItem.ToString());
+                        if (monthComboBox1.SelectedIndex > -1 && lectureNumberComboBox3.SelectedIndex < 0)
+                        {
+                            month = Convert.ToInt32(monthComboBox1.Text);
+                            dt = Student.getStudentDataWithPlace_Group_Attendace_studName(studentName, placeId, groupId, month, lectureNumber);
+                        }
+                        else if (monthComboBox1.SelectedIndex > -1 && lectureNumberComboBox3.SelectedIndex > -1)
+                        {
+                            month = Convert.ToInt32(monthComboBox1.Text);
+                            lectureNumber = Convert.ToInt32(lectureNumberComboBox3.Text);
+                            dt = Student.getStudentDataWithPlace_Group_Attendace_studName(studentName, placeId, groupId, month, lectureNumber);
+                        }
+                        else
+                        {
+                            dt = Student.getAllAttendace_studName(studentName, placeId, groupId);
+                        }
+                    }
+                    else
+                    {
+                        if (monthComboBox1.SelectedIndex > -1 && lectureNumberComboBox3.SelectedIndex < 0)
+                        {
+                            month = Convert.ToInt32(monthComboBox1.Text);
+                            dt = Student.getStudentDataWithPlace_Group_Attendace_studName(studentName, placeId, 0, month, lectureNumber);
+                        }
+                        else if (monthComboBox1.SelectedIndex > -1 && lectureNumberComboBox3.SelectedIndex > -1)
+                        {
+                            month = Convert.ToInt32(monthComboBox1.Text);
+                            lectureNumber = Convert.ToInt32(lectureNumberComboBox3.Text);
+                            dt = Student.getStudentDataWithPlace_Group_Attendace_studName(studentName, placeId, 0, month, lectureNumber);
+                        }
+                        else
+                        {
+                            dt = Student.getAllAttendace_studName(studentName, placeId, 0);
+                        }
+                    }
+                }
+                else if (filterByComboBox1.SelectedItem.ToString() == "Exam")
+                {
+                    int groupId = Group.getGroupIdByName(groupComboBox18.SelectedItem.ToString());
+                    if (groupComboBox18.SelectedIndex > -1)
+                    {
+                        if (monthComboBox1.SelectedIndex > -1)
+                        {
+                            month = Convert.ToInt32(monthComboBox1.Text);
+                            dt = Student.getStudentDataWithPlace_Group_Exam_studenName(studentName, placeId, groupId, month);
+                        }
+                        else
+                        {
+                            dt = Student.getAllExams_studName(studentName, placeId, groupId);
+                        }
+                    }
+                    else
+                    {
+                        if (monthComboBox1.SelectedIndex > -1)
+                        {
+                            month = Convert.ToInt32(monthComboBox1.Text);
+                            dt = Student.getStudentDataWithPlace_Group_Exam_studenName(studentName, placeId, 0, month);
+                        }
+                        else
+                        {
+                            dt = Student.getAllExams_studName(studentName, placeId, 0);
+                        }
+                    }
+                }
+                this.dataGridView1.DataSource = dt;
+                dataGridView1.Columns[0].Width = 200;
+                dataGridView1.Columns[1].Width = 40;
+                return;
             }
 
         }

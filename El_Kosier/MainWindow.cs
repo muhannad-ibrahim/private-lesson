@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using El_Kosier.Models;
 using System.Windows.Forms;
 
 namespace El_Kosier
@@ -36,6 +37,24 @@ namespace El_Kosier
         private void button3_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void deleteAllButton4_Click(object sender, EventArgs e)
+        {
+            string message = "By clicking OK, All Courses will be permenantly DELETED\nmake sure from your choice";
+            string title = " All courses will be deleted";
+            MessageBoxButtons buttons = MessageBoxButtons.OKCancel;
+            DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+            if (result != DialogResult.OK)
+            {
+                return;
+            }
+            else
+            {
+                Student.deleteAllStudents();
+                Place.deleteAllPlaces();
+                MessageBox.Show("All students are deleted successfully..!");
+            }
         }
     }
 }

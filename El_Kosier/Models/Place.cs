@@ -9,9 +9,6 @@ namespace El_Kosier.Models
 {
     class Place
     {
-        public int id { get; set;}
-        public string placeName { get; set; }
-
         public static void insertPlace(string placeName) {
             SqlConnection cn = new SqlConnection(env.db_con_str);
             cn.Open();
@@ -30,6 +27,29 @@ namespace El_Kosier.Models
                 }
                 cn.Close();
 
+            }
+        }
+
+        public static void deleteAllPlaces()
+        {
+            SqlConnection cn = new SqlConnection(env.db_con_str);
+            cn.Open();
+            if (cn.State == System.Data.ConnectionState.Open)
+            {
+
+                string query = "delete from place";
+                SqlCommand cmd = new SqlCommand(query, cn);
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                    cmd.CommandText = "DBCC CHECKIDENT (place, RESEED, 0)";
+                    cmd.ExecuteNonQuery();
+                }
+                catch (System.Data.SqlClient.SqlException ex)
+                {
+                    MessageBox.Show(ex.Errors.ToString());
+                }
+                cn.Close();
             }
         }
 

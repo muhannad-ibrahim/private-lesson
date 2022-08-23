@@ -32,8 +32,6 @@
             this.entryButton1 = new System.Windows.Forms.Button();
             this.searchButton2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.restoreButton1 = new System.Windows.Forms.Button();
-            this.backUpButton2 = new System.Windows.Forms.Button();
             this.exitButton3 = new System.Windows.Forms.Button();
             this.deleteAllButton4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -59,24 +57,13 @@
             // 
             // label1
             // 
+            this.label1.AutoEllipsis = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label1.Name = "label1";
-            // 
-            // restoreButton1
-            // 
-            this.restoreButton1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            resources.ApplyResources(this.restoreButton1, "restoreButton1");
-            this.restoreButton1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.restoreButton1.Name = "restoreButton1";
-            this.restoreButton1.UseVisualStyleBackColor = false;
-            // 
-            // backUpButton2
-            // 
-            this.backUpButton2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            resources.ApplyResources(this.backUpButton2, "backUpButton2");
-            this.backUpButton2.ForeColor = System.Drawing.Color.Black;
-            this.backUpButton2.Name = "backUpButton2";
-            this.backUpButton2.UseVisualStyleBackColor = false;
+            this.label1.UseWaitCursor = true;
             // 
             // exitButton3
             // 
@@ -94,6 +81,7 @@
             this.deleteAllButton4.ForeColor = System.Drawing.Color.Red;
             this.deleteAllButton4.Name = "deleteAllButton4";
             this.deleteAllButton4.UseVisualStyleBackColor = false;
+            this.deleteAllButton4.Click += new System.EventHandler(this.deleteAllButton4_Click);
             // 
             // MainWindow
             // 
@@ -102,8 +90,6 @@
             this.BackgroundImage = global::El_Kosier.Properties.Resources._5166950;
             this.Controls.Add(this.deleteAllButton4);
             this.Controls.Add(this.exitButton3);
-            this.Controls.Add(this.backUpButton2);
-            this.Controls.Add(this.restoreButton1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.searchButton2);
             this.Controls.Add(this.entryButton1);
@@ -119,8 +105,6 @@
         private System.Windows.Forms.Button searchButton2;
         private System.Windows.Forms.Button entryButton1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button restoreButton1;
-        private System.Windows.Forms.Button backUpButton2;
         private System.Windows.Forms.Button exitButton3;
         private System.Windows.Forms.Button deleteAllButton4;
     }

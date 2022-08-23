@@ -10,8 +10,6 @@ namespace El_Kosier.Models
 {
     class Payment
     {
-        public int id { get; set; }
-        public int month { get; set; }
 
         public static void insertPayment(int month, int studentId) {
             SqlConnection cn = new SqlConnection(env.db_con_str);
@@ -35,7 +33,6 @@ namespace El_Kosier.Models
         }
 
         public static DataTable getPaymentById(int studentId) {
-            int month;
             SqlConnection cn = new SqlConnection(env.db_con_str);
             cn.Open();
             string query = $"SELECT month FROM payment WHERE student_id = {studentId}";
