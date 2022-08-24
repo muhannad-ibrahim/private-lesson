@@ -169,7 +169,6 @@ F:\ProjectsAfterGrad\private-lesson\El_Kosier\bin\Debug\El_Kosier.exe.config
 F:\ProjectsAfterGrad\private-lesson\El_Kosier\bin\Debug\El_Kosier.exe
 F:\ProjectsAfterGrad\private-lesson\El_Kosier\bin\Debug\El_Kosier.pdb
 F:\ProjectsAfterGrad\private-lesson\El_Kosier\bin\Debug\ar\El_Kosier.resources.dll
-F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.csprojAssemblyReference.cache
 F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.adding_places.resources
 F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.adding_groups.resources
 F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.StudentAttendance.resources
@@ -192,3 +191,4 @@ F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.exe
 F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.pdb
 F:\ProjectsAfterGrad\private-lesson\El_Kosier\bin\Debug\Database1.mdf
 F:\ProjectsAfterGrad\private-lesson\El_Kosier\bin\Debug\Database1_log.ldf
+F:\ProjectsAfterGrad\private-lesson\El_Kosier\obj\x86\Debug\El_Kosier.csprojAssemblyReference.cache
