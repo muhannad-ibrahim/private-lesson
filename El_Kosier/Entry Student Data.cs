@@ -20,9 +20,19 @@ namespace El_Kosier
             {
                 placeComboBox9.Items.Add(name);
             }
-            idStudentTextBox2.Value = Student.getMaxStudentCode() + 1;
         }
-                
+
+        /*public Form3(int maxCode)
+        {
+            InitializeComponent();
+            List<string> placesName = Place.getAllplacesName();
+            foreach (string name in placesName)
+            {
+                placeComboBox9.Items.Add(name);
+            }
+            idStudentTextBox2.Value = maxCode + 1;
+        }*/
+
         private void placeComboBox9_KeyUp(object sender, KeyEventArgs e)
         {
              if (e.KeyCode == Keys.Enter)
@@ -110,7 +120,7 @@ namespace El_Kosier
             int groupId = Group.getGroupIdByName(groupComboBox10.SelectedItem.ToString());
             string studentNumber = studentNumberTextBox1.Text;
             string enrollDate = dateTimePicker1.Text.ToString();
-
+            
             Student.insertStudent(studentName, studentCode, grade, parentNumber, notes, studentNumber, enrollDate, placeId, groupId);
             this.Close();
             Form3 frm = new Form3();
@@ -126,6 +136,20 @@ namespace El_Kosier
             foreach (string name in groupsName)
             {
                 groupComboBox10.Items.Add(name);
+            }
+        }
+
+        private void groupComboBox10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int groupId = Group.getGroupIdByName(groupComboBox10.SelectedItem.ToString());
+            int maxCode = Student.getMaxStudentCode(groupId);
+            idStudentTextBox2.Value = maxCode + 1;
+        }
+
+        private void idStudentTextBox2_ValueChanged(object sender, EventArgs e)
+        {
+            if ((int)idStudentTextBox2.Value == 101) {
+                MessageBox.Show("Carefull you reach for the max ids of this group");
             }
         }
     }

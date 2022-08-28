@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.1401
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "El_Kosier", "El_Kosier\El_Kosier.csproj", "{D60996BC-8DAA-4FC4-A4E7-2AAB3B6EDAB0}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Private_Lesson Setup", "Private_Lesson Setup\Private_Lesson Setup.vdproj", "{1CADAEE4-286A-4693-80E8-0617F090F8ED}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Private Lesson", "Private Lesson\Private Lesson.vdproj", "{B62BAB20-DAA5-4A53-9573-6AF78BC5704D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{D60996BC-8DAA-4FC4-A4E7-2AAB3B6EDAB0}.Debug|x86.Build.0 = Debug|x86
 		{D60996BC-8DAA-4FC4-A4E7-2AAB3B6EDAB0}.Release|x86.ActiveCfg = Release|x86
 		{D60996BC-8DAA-4FC4-A4E7-2AAB3B6EDAB0}.Release|x86.Build.0 = Release|x86
-		{1CADAEE4-286A-4693-80E8-0617F090F8ED}.Debug|x86.ActiveCfg = Debug
-		{1CADAEE4-286A-4693-80E8-0617F090F8ED}.Release|x86.ActiveCfg = Release
+		{B62BAB20-DAA5-4A53-9573-6AF78BC5704D}.Debug|x86.ActiveCfg = Debug
+		{B62BAB20-DAA5-4A53-9573-6AF78BC5704D}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

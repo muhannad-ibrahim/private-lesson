@@ -60,11 +60,11 @@ namespace El_Kosier.Models
             }
         }
 
-        public static int getMaxStudentCode()
+        public static int getMaxStudentCode(int groupId)
         {
             SqlConnection cn = new SqlConnection(env.db_con_str);
             cn.Open();
-            string query = "SELECT MAX(student_code) from student";
+            string query = $"SELECT MAX(student_code) from student s, \"group\" g WHERE s.group_id=g.id" ;
             SqlCommand cmd = new SqlCommand(query, cn);
             object code = cmd.ExecuteScalar();
             if (code.GetType() == typeof(DBNull))

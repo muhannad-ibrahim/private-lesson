@@ -34,7 +34,6 @@
             this.attendanceButton5 = new System.Windows.Forms.Button();
             this.examsButton7 = new System.Windows.Forms.Button();
             this.returnButton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.placesButton = new System.Windows.Forms.Button();
             this.groupsButton = new System.Windows.Forms.Button();
             this.addNewSourceCheckBox = new System.Windows.Forms.CheckBox();
@@ -85,11 +84,6 @@
             this.returnButton.UseVisualStyleBackColor = false;
             this.returnButton.Click += new System.EventHandler(this.button5_Click);
             // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
             // placesButton
             // 
             this.placesButton.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -123,7 +117,6 @@
             this.Controls.Add(this.addNewSourceCheckBox);
             this.Controls.Add(this.groupsButton);
             this.Controls.Add(this.placesButton);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.returnButton);
             this.Controls.Add(this.examsButton7);
             this.Controls.Add(this.attendanceButton5);
@@ -142,7 +135,6 @@
         private System.Windows.Forms.Button attendanceButton5;
         private System.Windows.Forms.Button examsButton7;
         private System.Windows.Forms.Button returnButton;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button placesButton;
         private System.Windows.Forms.Button groupsButton;
         private System.Windows.Forms.CheckBox addNewSourceCheckBox;

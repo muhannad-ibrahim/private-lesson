@@ -180,6 +180,7 @@
             this.groupComboBox10.Name = "groupComboBox10";
             this.groupComboBox10.Size = new System.Drawing.Size(177, 31);
             this.groupComboBox10.TabIndex = 2;
+            this.groupComboBox10.SelectedIndexChanged += new System.EventHandler(this.groupComboBox10_SelectedIndexChanged);
             this.groupComboBox10.KeyUp += new System.Windows.Forms.KeyEventHandler(this.groupComboBox10_KeyUp);
             // 
             // placeComboBox9
@@ -289,9 +290,15 @@
             // 
             this.idStudentTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.idStudentTextBox2.Location = new System.Drawing.Point(633, 150);
+            this.idStudentTextBox2.Maximum = new decimal(new int[] {
+            101,
+            0,
+            0,
+            0});
             this.idStudentTextBox2.Name = "idStudentTextBox2";
             this.idStudentTextBox2.Size = new System.Drawing.Size(120, 29);
             this.idStudentTextBox2.TabIndex = 92;
+            this.idStudentTextBox2.ValueChanged += new System.EventHandler(this.idStudentTextBox2_ValueChanged);
             this.idStudentTextBox2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.idStudentTextBox2_KeyUp);
             // 
             // Form3
