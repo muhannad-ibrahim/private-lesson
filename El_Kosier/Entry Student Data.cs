@@ -141,6 +141,7 @@ namespace El_Kosier
 
         private void groupComboBox10_SelectedIndexChanged(object sender, EventArgs e)
         {
+            saveButton.Enabled = true;
             int groupId = Group.getGroupIdByName(groupComboBox10.SelectedItem.ToString());
             int maxCode = Student.getMaxStudentCode(groupId);
             idStudentTextBox2.Value = maxCode + 1;
@@ -149,7 +150,7 @@ namespace El_Kosier
         private void idStudentTextBox2_ValueChanged(object sender, EventArgs e)
         {
             if ((int)idStudentTextBox2.Value == 101) {
-                MessageBox.Show("Carefull you reach for the max ids of this group");
+                saveButton.Enabled = false;
             }
         }
     }

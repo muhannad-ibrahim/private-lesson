@@ -44,7 +44,10 @@ namespace El_Kosier.Models
                     cmd.ExecuteNonQuery();
                     cmd.CommandText = "DBCC CHECKIDENT (place, RESEED, 0)";
                     cmd.ExecuteNonQuery();
+                    cmd.CommandText = "DBCC CHECKIDENT (\"group\", RESEED, 0)";
+                    cmd.ExecuteNonQuery();
                 }
+
                 catch (System.Data.SqlClient.SqlException ex)
                 {
                     MessageBox.Show(ex.Errors.ToString());

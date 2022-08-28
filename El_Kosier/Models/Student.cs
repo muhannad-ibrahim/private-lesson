@@ -64,7 +64,7 @@ namespace El_Kosier.Models
         {
             SqlConnection cn = new SqlConnection(env.db_con_str);
             cn.Open();
-            string query = $"SELECT MAX(student_code) from student s, \"group\" g WHERE s.group_id=g.id" ;
+            string query = $"SELECT MAX(student_code) from student s, \"group\" g WHERE s.group_id={groupId}" ;
             SqlCommand cmd = new SqlCommand(query, cn);
             object code = cmd.ExecuteScalar();
             if (code.GetType() == typeof(DBNull))
