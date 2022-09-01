@@ -12,9 +12,9 @@ https://www.linkedin.com/in/muhannad-ibrahim
 
 ## To install the program 
 
-* First you have to download the setup file that is uploaded to the repo.
+* First you have to download the setup file that is uploaded to the repo with name Private Lesson.
 * run the setup file and install the program on your machine.
-* download sqlLocalDB and intall it on your machine from 
+* download sqlLocalDB and install it on your machine from 
           "https://download.microsoft.com/download/f/a/8/fa83d147-63d1-449c-b22d-5fef9bd5bb46/SQLServer2016-SSEI-Expr.exe"
 
 ## CONTENTS
