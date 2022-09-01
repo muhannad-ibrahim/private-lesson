@@ -168,5 +168,27 @@ namespace El_Kosier
                 savebutton4.Focus();
             }
         }
+
+        private void savebutton4_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(studentNameTextBox9.Text) || String.IsNullOrEmpty(gradeTextBox12.Text) || String.IsNullOrEmpty(studentNumberTextBox1.Text) || String.IsNullOrEmpty(guardianNumberTextBox13.Text) || String.IsNullOrEmpty(notesTextBox19.Text))
+            {
+                MessageBox.Show("May be there are some empty fields.\n PLEASE, check it again ");
+            }
+            else
+            {
+                string studentName = studentNameTextBox9.Text.ToString();
+                int studentCode = int.Parse(studentIdTextBox10.Text);
+                string grade = gradeTextBox12.Text.ToString();
+                string parentNumber = guardianNumberTextBox13.Text.ToString();
+                string notes = notesTextBox19.Text.ToString();
+                int placeId = Place.getPlaceIdByName(placeTextBox15.Text.ToString());
+                int groupId = Group.getGroupIdByName(groupTextBox14.Text.ToString());
+                string studentNumber = studentNumberTextBox1.Text;
+
+                Student.updateStudent(studentName, grade, parentNumber, notes, studentNumber, studentCode, placeId, groupId);
+                this.Close();
+            }
+        }
     }
 }

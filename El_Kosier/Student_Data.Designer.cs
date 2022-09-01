@@ -309,6 +309,7 @@
             this.savebutton4.TabIndex = 13;
             this.savebutton4.Text = "Save";
             this.savebutton4.UseVisualStyleBackColor = false;
+            this.savebutton4.Click += new System.EventHandler(this.savebutton4_Click);
             // 
             // deletebutton5
             // 

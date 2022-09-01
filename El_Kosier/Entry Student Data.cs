@@ -22,17 +22,6 @@ namespace El_Kosier
             }
         }
 
-        /*public Form3(int maxCode)
-        {
-            InitializeComponent();
-            List<string> placesName = Place.getAllplacesName();
-            foreach (string name in placesName)
-            {
-                placeComboBox9.Items.Add(name);
-            }
-            idStudentTextBox2.Value = maxCode + 1;
-        }*/
-
         private void placeComboBox9_KeyUp(object sender, KeyEventArgs e)
         {
              if (e.KeyCode == Keys.Enter)
