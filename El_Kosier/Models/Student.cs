@@ -38,6 +38,28 @@ namespace El_Kosier.Models
             }
         }
 
+        public static void updateStudent(string studName, string grade, string parNum, string notes, string studNum, int studCode, int placeId, int groupId) {
+            SqlConnection cn = new SqlConnection(env.db_con_str);
+            cn.Open();
+            if (cn.State == System.Data.ConnectionState.Open)
+            {
+
+                string query = $"UPDATE student SET student_name = N'{studName}' , grade = '{grade}' , parent_number = '{parNum}' , notes = N'{notes}' , student_number = '{studNum}' WHERE student_code = {studCode} AND place_id = {placeId} AND group_id = {groupId}";
+                SqlCommand cmd = new SqlCommand(query, cn);
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Updated student successfully!");
+                }
+                catch (System.Data.SqlClient.SqlException ex)
+                {
+                    MessageBox.Show(ex.Errors.ToString());
+                }
+                cn.Close();
+
+            }
+        }
+
         public static void deleteAllStudents() {
             SqlConnection cn = new SqlConnection(env.db_con_str);
             cn.Open();
@@ -116,18 +138,23 @@ namespace El_Kosier.Models
 
         public static int getStudentIdByName(string studentName)
         {
-            int studentId;
+            int studentId = 0;
             SqlConnection cn = new SqlConnection(env.db_con_str);
             cn.Open();
             string query = $"SELECT id FROM student WHERE student_name LIKE N'{studentName}'";
-            using (SqlCommand cmd = new SqlCommand(query, cn))
-            {
-                SqlDataReader reader = cmd.ExecuteReader();
-                reader.Read();
-                studentId = (int)reader.GetValue(0);
-                cn.Close();
-                return studentId;
+            try {
+                using (SqlCommand cmd = new SqlCommand(query, cn))
+                {
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    reader.Read();
+                    studentId = (int)reader.GetValue(0);
+                    cn.Close();
+                }
             }
+            catch (Exception ex) {
+                MessageBox.Show(ex.Message);
+            }
+            return studentId;
         }
 
         public static void deleteStudent(int studentId) {
